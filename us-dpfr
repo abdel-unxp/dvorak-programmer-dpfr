@@ -1,0 +1,61 @@
+// Programmer Dvorak with french accents and some grec symbols.
+// by Abdel Benamrouche abdel@unxp.fr
+// forked from what did Dmitry Prokashev <heliosframework at gmail dot com>, but is now very different.
+// based on Programmer Dvorak by Roland Kaufmann
+//
+partial alphanumeric_keys
+xkb_symbols "dpfr" {
+
+    name[Group1] = "English (Programmer Dvorak with European Letters)";
+
+    key <TLDE> { [ dollar,       asciitilde,          EuroSign,                 cent ] };
+    key <AE01> { [ ampersand,    percent,             sterling,                  yen ] };
+    key <AE02> { [ bracketleft,  7,              guillemotleft,                U2039 ] }; // « ‹
+    key <AE03> { [ braceleft,    5                                                   ] };
+    key <AE04> { [ braceright,   3,                  masculine,        threesuperior ] };
+    key <AE05> { [ parenleft,    1,                    onehalf,          onesuperior ] };
+    key <AE06> { [ equal,        9,                      U2248                       ] }; // ≈
+    key <AE07> { [ asterisk,     0,                   multiply,             division ] };
+    key <AE08> { [ parenright,   2,                ordfeminine,          twosuperior ] };
+    key <AE09> { [ plus,         4                                                   ] };
+    key <AE10> { [ bracketright, 6,             guillemotright,                U203A ] }; // » ›
+    key <AE11> { [ exclam,       8,                 exclamdown                       ] }; // ¡
+    key <AE12> { [ numbersign,   grave,        dead_circumflex,           dead_caron ] };
+
+    key <AD01> { [ semicolon,    colon,     doublelowquotemark,   singlelowquotemark ] };
+    key <AD02> { [ comma,        less,     leftdoublequotemark,  leftsinglequotemark ] };
+    key <AD03> { [ period,       greater, rightdoublequotemark, rightsinglequotemark ] };
+    key <AD04> { [ p,            P,                       U3C0,                 U3A0 ] }; // π Π
+    key <AD05> { [ y,            Y,                       U3C8,                 U3A8 ] }; // ψ Ψ 
+    key <AD06> { [ f,            F,                       U3D5,                 U3A6 ] }; // ϕ Φ
+    key <AD07> { [ g,            G,                       U3B3,                 U393 ] }; // γ Γ
+    key <AD08> { [ c,            C,                   ccedilla,             Ccedilla ] };
+    key <AD09> { [ r,            R,                       U3C1                       ] }; // ρ
+    key <AD10> { [ l,            L,                       U3BB,               Oslash ] }; // λ Ø
+    key <AD11> { [ slash,        question,        questiondown,                U203D ] }; // ¿ ‽
+    key <AD12> { [ at,           asciicircum,        copyright,           numerosign ] };
+
+    key <AC01> { [ a,            A,                     agrave,               Agrave ] };
+    key <AC02> { [ o,            O,                 ocircumflex,         Ocircumflex ] };
+    key <AC03> { [ e,            E,                     eacute,               Eacute ] };
+    key <AC04> { [ u,            U,                ucircumflex,          Ucircumflex ] };
+    key <AC05> { [ i,            I,                 idiaeresis,           Idiaeresis ] };
+    key <AC06> { [ d,            D,                       U3B4,                U394 ] }; // δ Δ 
+    key <AC07> { [ h,            H                                                  ] };
+    key <AC08> { [ t,            T,                      U03B8                      ] }; // θ
+    key <AC09> { [ n,            N,                     ntilde,               Ntilde ] };
+    key <AC10> { [ s,            S,                      U03A3,              section ] }; // Σ § 
+    key <AC11> { [ minus,        underscore,    dead_diaeresis,               Oacute ] };
+    key <BKSL> { [ backslash,    bar,           dead_abovering,          dead_macron ] };
+
+    key <AB01> { [ apostrophe,   quotedbl,          dead_acute,            0x1002026 ] };
+    key <AB02> { [ q,            Q,                         oe,                   OE ] };
+    key <AB03> { [ j,            J,                     egrave,               Egrave ] };
+    key <AB04> { [ k,            K,                 udiaeresis,           Udiaeresis ] };
+    key <AB05> { [ x,            X,                       U3BE                       ] }; // ξ
+    key <AB06> { [ b,            B,                       U3B2,                 U3B1 ] }; // β α
+    key <AB07> { [ m,            M,                      U03BC,                 U3A9 ] }; // μ Ω
+    key <AB08> { [ w,            W,                      aring,                Aring ] };
+    key <AB09> { [ v,            V,                     igrave,               Igrave ] };
+    key <AB10> { [ z,            Z,                       U3B6                       ] }; // ζ
+};
